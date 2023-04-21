@@ -1,13 +1,14 @@
-let n1 = 0, n2 = 1, nextTerm;
+
 
 function fibonacci(number) {
 // your code here
-for (let i = 1; i <= number; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextTerm;
-}
+var a=0,b=1;
+	for(var i=0;i<=number.length;i++){
+		var temp =a + b;
+		return temp;
+		a=b;
+		b=temp;
+	}
 }
 
 module.exports = fibonacci;
